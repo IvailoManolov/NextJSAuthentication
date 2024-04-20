@@ -5,6 +5,7 @@ interface FormErrorProps {
 }
 
 export const FormError: React.FC<FormErrorProps> = ({ message }) => {
+    console.log("hello")
     if (!message) {
         return null
     }
