@@ -30,6 +30,16 @@ export const sendVerificationEmail = async (email: string, token: string) => {
       color:black;
     }
 
+    .container img {
+        position: absolute; /* Layers image on top of background */
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 50%;
+        border-radius: 50%; /* Makes the image round */
+        object-fit: cover; /* Ensures image fills container */
+      }
+
     h1 {
       margin-bottom: 20px;
       color:inherit;
@@ -58,7 +68,7 @@ export const sendVerificationEmail = async (email: string, token: string) => {
 </head>
 <body>
   <div class="container">
-    <h1>Clashy</h1>
+    <img src="https://i.ibb.co/d5Xw0fZ/clashymain.webp" alt="Logo" class="logo">
     <h2>Email Verification</h2>
     <p>We are happy to have a new clasher in the family! Verify your email with the link below!</p>
     <a href=${confirmLink}>VERIFY EMAIL</a>
@@ -99,6 +109,16 @@ export const sendPasswordResetEmail = async (email: string, token: string) => {
       color:black;
     }
 
+    .container img {
+        position: absolute; /* Layers image on top of background */
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 50%;
+        border-radius: 50%; /* Makes the image round */
+        object-fit: cover; /* Ensures image fills container */
+      }
+
     h1 {
       margin-bottom: 20px;
       color:inherit;
@@ -127,7 +147,7 @@ export const sendPasswordResetEmail = async (email: string, token: string) => {
 </head>
 <body>
   <div class="container">
-    <h1>Clashy</h1>
+    <img src="https://i.ibb.co/d5Xw0fZ/clashymain.webp" alt="Logo" class="logo">
     <h2>Forgot your password?</h2>
     <p>That's okay, it happens! Click on the link below to reset your password.</p>
     <a href=${resetPasswordLink}>RESET YOUR PASSWORD</a>
@@ -165,6 +185,16 @@ export const sendTwoFactorTokenEmail = async (email: string, token: string) => {
       color:black;
     }
 
+      .container img {
+        position: absolute; /* Layers image on top of background */
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 50%;
+        border-radius: 50%; /* Makes the image round */
+        object-fit: cover; /* Ensures image fills container */
+      }
+
     h1 {
       margin-bottom: 20px;
       color:inherit;
@@ -194,7 +224,7 @@ export const sendTwoFactorTokenEmail = async (email: string, token: string) => {
 </head>
 <body>
   <div class="container">
-    <h1>Clashy</h1>
+    <img src="https://i.ibb.co/d5Xw0fZ/clashymain.webp" alt="Logo" class="logo">
     <h2>We are keeping your account secure!</h2>
     <p>Here is your 2FA token</p>
     <h3>${token}</h3>
